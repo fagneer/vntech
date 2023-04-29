@@ -1,0 +1,11 @@
+CRITICAL - 2023-02-13 14:00:22 --> Undefined variable $conceitos
+in APPPATH\Views\home_contatos.php on line 23.
+ 1 APPPATH\Views\home_contatos.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conceitos', 'APPPATH\\Views\\home_contatos.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home_contatos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home_contatos', [], true)
+ 5 APPPATH\Controllers\Home.php(56): view('home_contatos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->contatos()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

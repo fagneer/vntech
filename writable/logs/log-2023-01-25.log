@@ -1,0 +1,9 @@
+CRITICAL - 2023-01-25 13:06:40 --> Invalid file: "home_solucoes.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home_solucoes.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('home_solucoes', [], true)
+ 3 APPPATH\Controllers\Home.php(36): view('home_solucoes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->solucoes()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

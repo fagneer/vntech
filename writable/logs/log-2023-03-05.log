@@ -1,0 +1,190 @@
+ERROR - 2023-03-05 18:22:57 --> mysqli_sql_exception: Table 'vntech.usuarios' doesn't exist in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\Validation\StrictRules\Rules.php(154): CodeIgniter\Validation\Rules->is_unique('123', 'cpf', Array)
+#6 C:\xampp\htdocs\site\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('123', 'usuarios.cpf', Array, NULL, 'cpf')
+#7 C:\xampp\htdocs\site\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('cpf', 'cpf', '123', Array, Array)
+#8 C:\xampp\htdocs\site\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\site\app\Controllers\Home.php(121): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->cadastro()
+#11 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\site\web\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-05 18:22:57 --> Table 'vntech.usuarios' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `usuarios`
+WHERE `cpf` = :cpf:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(154): CodeIgniter\Validation\Rules->is_unique('123', 'cpf', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('123', 'usuarios.cpf', [...], null, 'cpf')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('cpf', 'cpf', '123', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Home.php(121): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->cadastro()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-05 18:53:37 --> mysqli_sql_exception: Unknown column 'empresas.deleted_at' in 'where clause' in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(197): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->cadastro()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\web\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-05 18:53:37 --> Unknown column 'empresas.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empresas`
+WHERE `cnpj` = :cnpj:
+AND `empresas`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Home.php(197): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->cadastro()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-05 18:54:33 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\site\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\site\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(218): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->cadastro()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\web\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-05 18:54:33 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nome`, `sobrenome`, `cpf`, `senha`, `status`) VALUES (:nome:, :sobrenome:, :cpf:, :senha:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(218): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-05 18:57:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`vntech`.`user`, CONSTRAINT `fk_user_empresa` FOREIGN KEY (`cnpj_cliente`) REFERENCES `empresas` (`cnpj`)) in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\site\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\site\system\Model.php(728): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(218): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->cadastro()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\web\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-05 18:57:34 --> Cannot add or update a child row: a foreign key constraint fails (`vntech`.`user`, CONSTRAINT `fk_user_empresa` FOREIGN KEY (`cnpj_cliente`) REFERENCES `empresas` (`cnpj`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`nome`, `sobrenome`, `cpf`, `senha`, `status`) VALUES (:nome:, :sobrenome:, :cpf:, :senha:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(728): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(218): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-05 18:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-05 19:44:01 --> mysqli_sql_exception: Table 'vntech.usuarios' doesn't exist in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\Validation\StrictRules\Rules.php(120): CodeIgniter\Validation\Rules->is_not_unique('123', 'cpf', Array)
+#6 C:\xampp\htdocs\site\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_not_unique('123', 'usuarios.cpf', Array, NULL, 'cpf')
+#7 C:\xampp\htdocs\site\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('cpf', 'cpf', '123', Array, Array)
+#8 C:\xampp\htdocs\site\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\site\app\Controllers\Home.php(69): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->login()
+#11 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\site\web\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-05 19:44:01 --> Table 'vntech.usuarios' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `usuarios`
+WHERE `cpf` = :cpf:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(120): CodeIgniter\Validation\Rules->is_not_unique('123', 'cpf', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_not_unique('123', 'usuarios.cpf', [...], null, 'cpf')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('cpf', 'cpf', '123', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Home.php(69): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-05 19:45:34 --> mysqli_sql_exception: Table 'vntech.usuarios' doesn't exist in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\Validation\StrictRules\Rules.php(120): CodeIgniter\Validation\Rules->is_not_unique('123', 'cpf', Array)
+#6 C:\xampp\htdocs\site\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_not_unique('123', 'usuarios.cpf', Array, NULL, 'cpf')
+#7 C:\xampp\htdocs\site\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('cpf', 'cpf', '123', Array, Array)
+#8 C:\xampp\htdocs\site\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\site\app\Controllers\Home.php(69): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->login()
+#11 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\site\web\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-03-05 19:45:34 --> Table 'vntech.usuarios' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `usuarios`
+WHERE `cpf` = :cpf:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(120): CodeIgniter\Validation\Rules->is_not_unique('123', 'cpf', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_not_unique('123', 'usuarios.cpf', [...], null, 'cpf')
+ 5 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('cpf', 'cpf', '123', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Home.php(69): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-05 19:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 19:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 19:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 19:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 19:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 19:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 19:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 19:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 20:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-05 20:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="companytec.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 10.583333 5.2916668"
+   height="20"
+   width="40">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="g877"
+     inkscape:document-units="px"
+     inkscape:cy="1.7767008"
+     inkscape:cx="34.768455"
+     inkscape:zoom="7.050968"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="g877"
+       transform="matrix(0.13436165,0,0,0.13436165,4.3556587,2.4249936)"
+       style="stroke-width:7.4426">
+      <g
+         style="stroke-width:5.51155"
+         transform="matrix(1.3503649,0,0,1.3503649,-2.4221508,1.4155441)"
+         id="g16">
+        <path
+           id="path26"
+           style="fill:#ffcf2d;fill-opacity:1;stroke-width:72.7524;stroke-linecap:round;stroke-linejoin:round"
+           inkscape:transform-center-y="-1.1681421"
+           d="M 3.9335938,-11.900391 -3.4257812,-0.67382812 12.992188,7.5195312 7.6914062,15.160156 H 44.445312 l -18.376953,-26.490234 -5.371093,7.7421874 z"
+           transform="scale(0.26458333)" />
+        <path
+           id="path22"
+           style="fill:#0074bb;fill-opacity:1;stroke-width:72.7524;stroke-linecap:round;stroke-linejoin:round"
+           inkscape:transform-center-y="-3.2830252"
+           d="M 26.068359,-43.302734 6.0761719,-14.484375 19.246094,-7.9550781 26.068359,-17.789062 44.558594,8.8632812 H 62.257812 Z M -5.8945312,2.7714844 -25.580078,31.146484 H 77.716797 L 65.115234,12.980469 H 47.414062 l 3.751954,5.408203 H 0.97070312 L 7.2539062,9.3320312 Z"
+           transform="scale(0.26458333)" />
+        <text
+           xml:space="preserve"
+           style="font-stretch:condensed;font-size:5.06695px;line-height:1.5;font-family:Roboto;-inkscape-font-specification:'Roboto Condensed';fill:#f9f9f9;fill-opacity:1;stroke:#f9f9f9;stroke-width:0.145826;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           x="-6.1771145"
+           y="20.614525"
+           id="text48"
+           transform="scale(1.6042406,0.62334791)"><tspan
+             sodipodi:role="line"
+             id="tspan46"
+             x="-6.1771145"
+             y="20.614525"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Agency FB';-inkscape-font-specification:'Agency FB';fill:#f9f9f9;stroke:#f9f9f9;stroke-width:0.145826;stroke-miterlimit:4;stroke-dasharray:none">COMPANYTEC</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

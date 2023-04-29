@@ -1,0 +1,18 @@
+{
+    "name": "yukki/site",
+    "description": "Gerador QRCode",
+    "autoload": {
+        "psr-4": {
+            "Yukki\\Site\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fagner Gomes"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+		"chillerlan/php-qrcode": "dev-main"
+    }
+}

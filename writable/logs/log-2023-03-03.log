@@ -1,0 +1,6 @@
+CRITICAL - 2023-03-03 14:21:53 --> Class "App\Controllers\Crypt" not found
+in APPPATH\Controllers\Home.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->login()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,622 @@
+CRITICAL - 2023-01-12 14:39:30 --> Undefined constant "App\Controllers\this"
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 14:39:49 --> Call to undefined function App\Controllers\findAll()
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 14:40:23 --> Call to undefined function App\Controllers\paginate()
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 14:40:24 --> Call to undefined function App\Controllers\paginate()
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 14:44:48 --> Call to undefined function App\Controllers\paginate()
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 14:45:14 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 14:45:14 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 17:25:48 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 17:25:48 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 18:00:44 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 18:00:44 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 18:06:41 --> Class "App\Controllers\App\Models\MenuHomeModel" not found
+in APPPATH\Controllers\Home.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 18:06:43 --> Class "App\Controllers\App\Models\MenuHomeModel" not found
+in APPPATH\Controllers\Home.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 18:07:10 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 18:07:10 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 18:07:14 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\xampp\htdocs\site\system\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 18:07:14 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1685): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(604): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1188): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 18:08:25 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 18:08:25 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 18:16:30 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 18:16:30 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 18:21:54 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 18:21:54 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 18:23:48 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 18:23:48 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 18:25:03 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174)
+#1 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('https://admin.m...', 'vntech', '@Vntech2022', 'vntech', 3306, '', 0)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido.  in C:\xampp\htdocs\site\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\site\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\site\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\site\system\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\site\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\site\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\site\app\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\site\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\site\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\site\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\site\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-12 18:25:03 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1601): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `menu_home`
+WHERE `menu_home`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

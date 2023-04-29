@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="youtube.svg"
+   xml:space="preserve"
+   viewBox="0 0 230.5005 230.5005"
+   id="Layer_1"
+   version="1.1"
+   width="400"
+   height="400"><metadata
+   id="metadata11"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs9" /><sodipodi:namedview
+   inkscape:current-layer="Layer_1"
+   inkscape:window-maximized="1"
+   inkscape:window-y="-8"
+   inkscape:window-x="-8"
+   inkscape:cy="291.39707"
+   inkscape:cx="269.86628"
+   inkscape:zoom="0.64327823"
+   showgrid="false"
+   id="namedview7"
+   inkscape:window-height="705"
+   inkscape:window-width="1366"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="0.25"
+   bordercolor="#000000"
+   pagecolor="#ffffff" />
+<g
+   style="stroke-width:2.10526"
+   transform="matrix(0.475,0,0,0.475,5.7625125,5.7327819)"
+   id="g4">
+	<path
+   id="path2"
+   d="M 365.257,67.393 H 95.744 C 42.866,67.393 0,110.259 0,163.137 v 134.728 c 0,52.878 42.866,95.744 95.744,95.744 h 269.513 c 52.878,0 95.744,-42.866 95.744,-95.744 V 163.137 c 0,-52.878 -42.866,-95.744 -95.744,-95.744 z m -64.751,169.663 -126.06,60.123 c -3.359,1.602 -7.239,-0.847 -7.239,-4.568 V 168.607 c 0,-3.774 3.982,-6.22 7.348,-4.514 l 126.06,63.881 c 3.748,1.899 3.683,7.274 -0.109,9.082 z"
+   style="fill:#f61c0d;stroke-width:2.10526" />
+</g>
+</svg>
