@@ -28,6 +28,10 @@ class Home extends BaseController
     }
 
     public function index(){
+
+
+
+
         return view('home', [
             'menu' => $this->menuHomeModel->findAll(),
             'submenu' => $this->subMenuHomeModel->findAll(),
@@ -36,32 +40,7 @@ class Home extends BaseController
         ]);
     }
 
-    function solucoes(){
-        return view('home_solucoes', [
-            'menu' => $this->menuHomeModel->findAll(),
-            'submenu' => $this->subMenuHomeModel->findAll(),
-            'page' => 'solucoes'
-        ]);
-    }
-
-    public function empresa(){
-        return view('home_empresa', [
-            'menu' => $this->menuHomeModel->findAll(),
-            'submenu' => $this->subMenuHomeModel->findAll(),
-            'timeline' => $this->timelineModel->findAll(),
-            'conceitos' => $this->conceitosModel->findAll(),
-            'page' => 'empresa'
-        ]);
-    }
-
-    public function contatos(){
-        return view('home_contatos', [
-            'menu' => $this->menuHomeModel->findAll(),
-            'submenu' => $this->subMenuHomeModel->findAll(),
-            'page' => 'contatos'
-        ]);
-    }
-
+   
     public function login(){
         // Validação das credenciais de acesso:
 

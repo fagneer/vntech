@@ -1,0 +1,9 @@
+CRITICAL - 2023-05-08 02:05:49 --> Invalid file: "portal/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portal/home.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('portal/home', [], true)
+ 3 APPPATH\Controllers\Portal.php(20): view('portal/home', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Portal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Portal))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
