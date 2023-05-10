@@ -7,17 +7,17 @@
 
     <!--âncora para Cadastro-->
     <div class="data-login">
-      <h2 class="title">Bem Vindo</h2> <!--Conteúdo Login-->
+      <h2 class="title title-login">Bem Vindo</h2> <!--Conteúdo Login-->
       <p class="description">Já possui uma conta?</p> <!--Primeira descrição-->
       <p class="description">Acesse para ter acesso à todos os recursos</p> <!--Segunda descrição-->
-      <button class="btn btn-outline-danger"> Cadastre-se </button><!--Âncora-->
+      <button class="btn btn-primary"> Cadastre-se </button><!--Âncora-->
     </div>
 
     <!--Credenciais de acesso-->
     <div class="form-login">
       <h2 class="title">Login</h2>
       <p class="description">Faça login com a sua conta</p>
-      <form action="" class="formulario">
+      <form action="" class="form">
         <input type="text" name="usuario" id="usuario" placeholder="Usuário">
         <input type="password" name="senha" id="senha" placeholder="Senha">
         <input class="btn btn-danger" type="submit" value="Login">
@@ -27,10 +27,10 @@
   </div>
 
   <!--Conteúdo Cadastro-->
-  <div class="content login-content">
+  <div class="content cadastro-content">
 
     <!--âncora para Login-->
-    <div class="data-login">
+    <div class="data-cadastro">
       <h2 class="title">Bem Vindo de Volta</h2> <!--Conteúdo Login-->
       <p class="description">Já possui uma conta?</p> <!--Primeira descrição-->
       <p class="description">Acesse para ter acesso à todos os recursos</p> <!--Segunda descrição-->
@@ -41,7 +41,7 @@
     <div class="form-login">
       <h2 class="title">Cadastro</h2>
       <p class="description">Faça login com a sua conta</p>
-      <form action="" class="formulario">
+      <form action="" class="form">
         <input type="text" name="nome" id="nome" placeholder="Nome">
         <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
         <input type="email" name="email" id="email" placeholder="E-mail">

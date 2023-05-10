@@ -12,9 +12,112 @@
     <title>AutoLearn | Suporte </title>
 
     <link rel='icon' type='image/svg' href='<?php echo base_url('includes/bootstrap/brand/icone.svg'); ?>'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="<?php echo base_url('includes/bootstrap/css/navbar-offcanvas.css');?>" rel="stylesheet">
+    
+    <style>
 
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .container{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+        background-color: #777;
+      }
+
+      .content{
+        border-radius: 15px;
+        background-color: white;
+        height: 50%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .content::before{
+        content:"";
+        position: absolute;
+        background-color: #58af9b;
+        height: 100%;
+        width: 40%
+      }
+
+      .login-content{
+        display: flex;
+      }
+
+      .form{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .cadastro-content{
+        position: absolute;
+        display: none;
+      }
+
+      .data-login{
+        text-align: center;
+        flex: 1 0 auto;
+        z-index: 10
+      }
+
+      .form-login{
+        text-align: center;
+        flex: 2 0 auto;
+      }
+
+      .title{
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      .title-login{
+        
+        color: #fff;
+      }
+
+      .description{
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
+        line-height: 30px;
+      }
+
+      .btn{
+        border-radius: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 10px;
+        padding: 10px 50px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .btn-primary{
+        background-color: transparent;
+        border: 1px solid #fff;
+      }
+
+      .btn-primary:hover{
+        background-color: #fff;
+        color: #58af9b;
+      }
+
+    </style>
 
   </head>
 
